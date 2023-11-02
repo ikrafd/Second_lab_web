@@ -18,12 +18,15 @@ a{
 .head{
   display: grid;
   text-align: right;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5.5fr;
   grid-auto-columns: auto;
   background-color:#c7d9f1;
-  gap:5%;
+  column-gap:6%;
   min-height:200px;
   padding: 1.5%;
+  align-items: center;
+  align-content: space-evenly;
+  height:fit-content;
 }
 
 
@@ -40,14 +43,16 @@ a{
 
 .frame-2{
   text-align: left;
+  margin: 0px;
 }
 
 .content{
+  display: grid;
 }
 
 .center{
   display: grid;
-  grid-template-columns: 2fr 2fr 3fr;
+  grid-template-columns: 2fr 2fr 4fr;
   grid-column-gap: 5%;
   min-height:450px;
 }
@@ -61,7 +66,7 @@ a{
   overflow: hidden;
   font-size: 120%;
   width: 50%;
-  min-height: 50px;
+  min-height: 10px;
   height:fit-content;
 }
 
@@ -71,22 +76,33 @@ a{
   grid-template-columns: auto;
   background-color:#fce9da;
   align-items:center;
-}
-
-#second {
-  background-color: #eaf2dd;
-}
-#second, #first{
   text-align: left;
   padding: 3%;
 }
+
+#second {
+  display:grid;
+  background-color: #eaf2dd;
+  align-content: center;
+  align-items:center;
+  text-align: left;
+}
+#second, #first{
+  text-align: left;
+  padding: 13.5%;
+  text-align: left;
+  align-content: center;
+}
+
 #third{
+
   display: grid;
   grid-template-areas: 
             "top"
             "inside";
   grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr;            
+  grid-template-columns: 1fr;  
+  width: 100%;          
 }
 #top{
   display: grid;
@@ -94,7 +110,9 @@ a{
   height:fit-content;
   grid-template-areas:"top";
   background-color: #fce9da;
-  padding: 3%;
+  padding: 3.5%;
+  align-items: center;
+  text-align: center;
 }
 
 .inside {
@@ -106,9 +124,12 @@ a{
 }
 
 .inLeft, .inRight {
+  display: grid;
   background-color:  #eaf2dd;
-  padding: 5%;
-  
+  padding: 7%;
+  grid-template-columns: auto;
+  align-items: center;
+  align-content: center;  
 }
 
 .footer{

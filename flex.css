@@ -132,11 +132,10 @@ a{
 
 #top{
   display: flex;
-  line-height: 15px;
   text-align:center;
   min-height:80px;
   height:fit-content;
-  padding: 20px;
+  padding: 3.5%;
   background-color: #fce9da;
   align-self: stretch;
   align-items: center;
